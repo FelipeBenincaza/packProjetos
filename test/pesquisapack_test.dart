@@ -3,10 +3,10 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:pesquisapack/pesquisapack.dart';
 
 void main() {
-  test('adds one to input values', () {
+  test('valida quesitos questionario', () {
     final validaQestionario = ValidaQuestionario();
 
-    expect(validaQestionario.verificaGps('', ''), 'Não foi capturada a localização da abertura do questionário. Confirmar salvar sem capturar?');
+    expect(validaQestionario.verificaGps('', ''), 'Não foi capturada a localização da abertura do questionário. Confirma salvar sem capturar?');
     expect(validaQestionario.verificaGps('-22.912758', '-43.227030'), '');
 
     String sim = 'Sim';
